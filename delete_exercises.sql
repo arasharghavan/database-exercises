@@ -7,4 +7,5 @@ SELECT * FROM albums WHERE genre = 'disco';
 DELETE FROM albums WHERE genre = 'disco';
 
 SELECT * FROM albums WHERE artist = 'Dire Straits';
-DELETE FROM albums WHERE artist = 'Dire Straits';te from albums where artist = '';
+DELETE FROM albums WHERE artist = 'Dire Straits';
+delete from albums where artist = '';
