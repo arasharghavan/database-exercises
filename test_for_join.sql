@@ -4,6 +4,7 @@ use join_test_db;
 select * from users;
 select * from roles;
 
+delete from users where id> 0;
 
 
 CREATE TABLE if not exists roles(
@@ -36,7 +37,11 @@ INSERT INTO users (name, email, role_id) VALUES
 ('sally', 'sally@example.com', 3),
 ('adam', 'adam@example.com', 3),
 ('jane', 'jane@example.com', null),
-('mike', 'mike@example.com', null);
+('mike', 'mike@example.com', null),
+('user1', 'user1@mail.com',null),
+('user2','user2@mai.com',2),
+('user3','user3@mail.com',2),
+('user4','user4@mail.com',2);
 
 
 select users.role_id from users group by role_id;
@@ -62,6 +67,7 @@ join users on users.role_id = roles.id;
 select users.name, concat(roles.name) as job, users.role_id
 from roles
 join users on users.role_id = roles.id;
+
 
 
 
