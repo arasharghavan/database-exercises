@@ -1,5 +1,6 @@
 use employees;
 
+
 select *
 from employees
 where hire_date = (select hire_date

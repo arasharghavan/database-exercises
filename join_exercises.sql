@@ -6,6 +6,8 @@ join dept_manager dm on e.emp_no = dm.emp_no
 join departments d on dm.dept_no = d.dept_no
 where dm.to_date
 ;
+
+
 # Using the example in the Associative Table Joins section as a guide, write a query that shows each department along with the name of the current manager for that department.
 
 
